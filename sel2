@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, y, w uint32
+	fmt.Println("Insira um número: ")
+	fmt.Scanln(&x)
+	fmt.Println("Insira outro número: ")
+	fmt.Scanln(&y)
+	fmt.Println("Insira mais um número: ")
+	fmt.Scanln(&y)
+	if x < y && x < w {
+		fmt.Println(x, "é o menor")
+	} else if y < x && y < w {
+		fmt.Println(y, "é o menor")
+	} else if w < x && w < y {
+		fmt.Println(w , "é o menor")
+	}
+}
