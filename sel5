@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x uint64
+	fmt.Println("Digite um número: ")
+	fmt.Scanln(&x)
+	if x%3 == 0 && x%5 == 0 {
+		fmt.Println("O número é multiplo de 3 e 5 ao mesmo tempo")
+	} else {
+		fmt.Println("Nãp é multiplo de 3 e 5 ao mesmo tempo")
+	}
+}
