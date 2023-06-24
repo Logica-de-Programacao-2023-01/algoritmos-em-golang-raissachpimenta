@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x float64
+	var y float64
+	fmt.Println("Insira 1 número: ")
+	fmt.Scanln(&x)
+	fmt.Println("Insira outro número: ")
+	fmt.Scanln(&y)
+	if x < y {
+		fmt.Println(y, " é maior")
+	} else if y < x {
+		fmt.Println(x, "é maior")
+	} else if x == y {
+		fmt.Println("O primeiro número é igual ao segundo número")
+	}
+}
