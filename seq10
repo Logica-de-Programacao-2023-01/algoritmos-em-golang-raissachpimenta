@@ -1,0 +1,11 @@
+package main
+
+import "fmt"
+
+func main() {
+	var kg float64
+	fmt.Println("Insira seu peso em Kg: ")
+	fmt.Scanln(&kg)
+	libras := 2.2
+	fmt.Println("Seu peso em Libras é: ", kg*libras)
+}
