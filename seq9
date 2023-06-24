@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var valor float64
+	var valorx float64
+	var valory float64
+	fmt.Println("Qual o valor do produto? ")
+	fmt.Scan(&valor)
+	valorx = valor * 10 / 100
+	valory = valor - valorx
+	fmt.Println("Seu valor com desconto é: ", valory)
+}
